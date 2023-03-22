@@ -1,0 +1,7 @@
+@startuml ユースケース図
+rectangle 銀行 {
+usecase 予約
+usecase ログイン
+}
+予約 <. ログイン : << include >>
+@enduml
