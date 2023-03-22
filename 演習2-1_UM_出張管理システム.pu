@@ -1,0 +1,23 @@
+@startuml 例題3
+left to right direction
+actor 申請者 as appli #DDDDDD;line:black;line.bold;
+actor 承認者 as approval #DDDDDD;line:black;line.bold;
+actor 経理担当者 as manage #DDDDDD;line:black;line.bold;
+actor 交通費管理システム as traffic #DDDDDD;line:black;line.bold;
+rectangle 出張管理システム {
+usecase 出張申請を登録する as A
+usecase 出張申請を提出する as B
+usecase 出張申請を承認する as C
+usecase 出張申請を却下する as D
+usecase 出張申請を差し戻す as E
+usecase 出張申請を確認する as F 
+}
+appli-->A
+appli--> B
+approval--> C
+approval--> D
+approval--> E
+approval--> F
+manage--> F
+A <-- traffic
+@enduml
