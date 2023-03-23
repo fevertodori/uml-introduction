@@ -2,13 +2,13 @@
 ' left to right direction
 skinparam actorStyle Hollow
 actor 人事担当者 #pink;line:red;line.bold;text:blue;line:green;line.bold;
-actor 社畜 #pink;line:red;line.bold;text:blue;line:green;line.bold;
+actor 社員 #pink;line:red;line.bold;text:blue;line:green;line.bold;
 package 従業員登録システム {
-usecase 社畜の情報を登録する as T
-usecase 社畜情報を参照する as K
-usecase 社畜情報を変更する as H
+usecase 社員の情報を登録する as T
+usecase 社員情報を参照する as K
+usecase 社員情報を変更する as H
 }
-社畜 --> K
+社員 --> K
 人事担当者 --> H
 人事担当者 --> T
 
