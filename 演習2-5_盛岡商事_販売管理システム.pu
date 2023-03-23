@@ -6,7 +6,7 @@ package 販売管理システム {
 usecase 出荷状況を登録する as T
 usecase 出荷状況を確認する as K
 }
-社畜 --> T:<<登録>>
-社畜 --> K:<<確認>>
+社畜 --> T
+社畜 --> K
 
 @enduml
