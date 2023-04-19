@@ -1,0 +1,17 @@
+@startuml
+hide footbox
+Actor ":俺ら" as kyaku
+participant ":しえなちゃん" as tenin
+participant ":ヤマトさん" as cook
+mainframe sd 木村家
+activate kyaku
+kyaku -> tenin :醤油ラーメンを注文する
+activate tenin
+tenin -> cook :調理を指示する
+activate cook
+cook -> cook :調理をする
+tenin <<-- cook :塩ラーメン
+kyaku <<-- tenin :塩ラーメン
+deactivate cook
+deactivate tenin
+@enduml
