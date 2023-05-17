@@ -1,0 +1,14 @@
+@startuml
+actor 利用者 as r
+rectangle 診察予約システム{
+usecase メニュー as m
+usecase 予約確認 as y
+usecase あなたの順番 as a
+usecase 今の順番 as i
+}
+actor 看護師 as k
+r -- m
+r -- y
+r -- a
+r -- i
+k -- i
