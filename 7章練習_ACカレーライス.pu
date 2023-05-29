@@ -1,0 +1,14 @@
+@startuml 並列処理
+title すき家でカレーを作る
+start
+:冷蔵庫からルーをとる|
+fork
+:ルーを温める|
+fork
+:トッピングを準備する|
+fork again
+:ごはんが出てくるところに皿をセットする|
+end fork
+:米に乗っけて完成|
+stop
+@enduml
