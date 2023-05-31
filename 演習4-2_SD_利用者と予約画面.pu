@@ -1,13 +1,13 @@
 @startuml
 hide footbox
 participant "user:利用者" as user
-participant "予約画面" as yoyaku
+participant "予約画面" as Y
 activate user
-    user ->> yoyaku: ログインする()
-    activate yoyaku
-    yoyaku -> yoyaku: 認証()
-    activate yoyaku
-    note right of yoyaku : 再帰呼出し
-    deactivate yoyaku
+    user ->> Y: ログインする()
+    activate Y
+    Y -> Y: 認証()
+    activate Y
+    note right of Y : 再帰呼出し
+    deactivate Y
 deactivate user
 @enduml
